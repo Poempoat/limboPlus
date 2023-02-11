@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.limbo.emu.main.sparc"
+    package="com.limbo.emu.plus.sparc"
     android:versionCode="60001"
     android:versionName="6.0.1-sparc">
 
@@ -10,7 +10,7 @@
         android:label="Limbo SPARC Emulator"
         >
         <activity
-            android:name="LimboEmuActivity"
+            android:name="com.limbo.emu.plus.sparc.LimboEmuActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
             android:label="Limbo SPARC"
             android:launchMode="singleTop"

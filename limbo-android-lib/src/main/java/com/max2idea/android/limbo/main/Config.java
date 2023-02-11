@@ -81,7 +81,7 @@ public class Config {
     public static final String kvmLink = "https://github.com/limboemu/limbo/wiki/KVM";
     public static final String faqLink = "https://github.com/limboemu/limbo/wiki/FAQ";
     public static final String toolsLink = "https://github.com/limboemu/limbo/wiki/Tools";
-    public static final String newVersionLink = "https://raw.githubusercontent.com/limboemu/limbo/master/VERSION";
+    public static final String newVersionLink = "https://raw.githubusercontent.com/Poempoat/limboPlus/master/VERSION";
     public static final String otherOSLink = "https://github.com/limboemu/limbo/wiki/Other-Operating-Systems";
 
     public static final boolean enableKeyboardLayoutOption = true;
@@ -126,7 +126,7 @@ public class Config {
     public static boolean enableSMPOnlyOnKVM = false;
     //set to true if you need to debug native library loading
     public static boolean loadNativeLibsEarly = false;
-    //XXX: QEMU 3.1.0 needs the libraries to be loaded from the main thread
+    //XXX: QEMU 3.1.0 needs the libraries to be loaded from the plus thread
     public static boolean loadNativeLibsMainThread = true;
     public static String wakeLockTag = "limbo:wakelock";
     public static String wifiLockTag = "limbo:wifilock";
@@ -136,14 +136,14 @@ public class Config {
     public static boolean viewLogInternally = true;
     //XXX some archs don't support floppy or sd card
     public static boolean enableEmulatedFloppy = true;
-    public static boolean enableEmulatedSDCard;
+    public static boolean enableEmulatedSDCard = true;
     public static String destLogFilename = "limbolog.txt";
     public static String notificationChannelID = "limbo";
     public static String notificationChannelName = "limbo";
     public static boolean showToast = false;
     public static boolean closeFileDescriptors = true;
     //XXX: qemu vvfat is buggy so we disable
-    public static boolean enableSharedFolder = false;
+    public static boolean enableSharedFolder = true;
 
     public static String machineFolder = "machines/";
     public static String logFilePath = null;

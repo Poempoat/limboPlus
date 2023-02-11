@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.limbo.emu.plus.sparc",
+  "variantName": "processDebugResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 60001,
+      "versionName": "6.0.1-sparc",
+      "outputFile": "limbo-android-sparc-debug.apk"
+    }
+  ]
+}

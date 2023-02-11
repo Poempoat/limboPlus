@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.limbo.emu.main.arm"
+    package="com.limbo.emu.plus.arm"
     android:versionCode="60001"
     android:versionName="6.0.1-arm">
 
@@ -10,7 +10,7 @@
         android:label="Limbo ARM Emulator"
         >
         <activity
-            android:name="LimboEmuActivity"
+            android:name="com.limbo.emu.plus.arm.LimboEmuActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
             android:label="Limbo ARM"
             android:launchMode="singleTop"

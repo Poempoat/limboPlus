@@ -46,7 +46,7 @@ import java.util.concurrent.Executors;
 
 /**
  * The view that renders the user-defined keys. If the user pressed outside of the user keys
- * the events are delegated to the activity main surface.
+ * the events are delegated to the activity plus surface.
  */
 public class KeySurfaceView extends SurfaceView implements SurfaceHolder.Callback {
     public static final int SOURCE_KEYMAP_SINGLEPOINT = -1;
@@ -362,7 +362,7 @@ public class KeySurfaceView extends SurfaceView implements SurfaceHolder.Callbac
     }
 
     /**
-     * Sends a Mouse Event to the main SDL Interface
+     * Sends a Mouse Event to the plus SDL Interface
      *
      * @param keyMapping KeyMapping containing Mouse Button Events
      * @param down       If true, send Mouse Button events with action down
@@ -376,7 +376,7 @@ public class KeySurfaceView extends SurfaceView implements SurfaceHolder.Callbac
     }
 
     /**
-     * Sends a Key Event to the main SDL Interface
+     * Sends a Key Event to the plus SDL Interface
      *
      * @param keyMapping KeyMapping containing Key Events
      * @param down       If true, send Key Events with action down

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.limbo.emu.main.ppc"
+    package="com.limbo.emu.plus.ppc"
     android:versionCode="60001"
     android:versionName="6.0.1-ppc">
 
@@ -10,7 +10,7 @@
         android:label="Limbo PowerPC Emulator"
         >
         <activity
-            android:name="LimboEmuActivity"
+            android:name="com.limbo.emu.plus.ppc.LimboEmuActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize"
             android:label="Limbo PowerPC"
             android:launchMode="singleTop"

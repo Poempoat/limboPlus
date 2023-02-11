@@ -338,7 +338,7 @@ public class FileUtils {
                     }
                     logFile.createNewFile();
                     Runtime.getRuntime().exec("logcat -c");
-                    Process process = Runtime.getRuntime().exec("logcat v main");
+                    Process process = Runtime.getRuntime().exec("logcat v plus");
                     os = new FileOutputStream(logFile);
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 

@@ -1004,7 +1004,7 @@ public class LimboSDLActivity extends SDLActivity
 
 
     protected void sendMouseEvent(int button, int action, int toolType, float x, float y) {
-        //HACK: we generate an artificial delay since the qemu main event loop
+        //HACK: we generate an artificial delay since the qemu plus event loop
         // is probably not able to process them if the timestamps are too close together?
         sendMouseEvent(button, action, toolType, x, y, action == MotionEvent.ACTION_UP ? Config.mouseButtonDelay : 0);
     }
@@ -1042,7 +1042,7 @@ public class LimboSDLActivity extends SDLActivity
     }
 
     protected void sendKeyEvent(KeyEvent event, int keycode, boolean down) {
-        //HACK: we generate an artificial delay since the qemu main event loop
+        //HACK: we generate an artificial delay since the qemu plus event loop
         // is probably not able to process them if the timestamps are too close together?
         sendKeyEvent(event, keycode, down, !down ? Config.keyDelay : 0);
     }

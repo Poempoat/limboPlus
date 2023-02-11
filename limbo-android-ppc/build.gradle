@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.limbo.emu.main.ppc"
+        applicationId "com.limbo.emu.plus.ppc"
         minSdkVersion 21
         targetSdkVersion 29
         ndk { abiFilters "armeabi-v7a","arm64-v8a", "x86", "x86_64" }
@@ -23,7 +23,7 @@ android {
     }
     sourceSets {
         main {
-            jniLibs.srcDirs = ['src/main/jniLibs']
+            jniLibs.srcDirs = ['src/plus/jniLibs']
         }
     }
 }

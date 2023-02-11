@@ -105,7 +105,7 @@ public class SDLActivity
      * The default implementation returns the defaults. It never returns null.
      * An array returned by a new implementation must at least contain "SDL2".
      * Also keep in mind that the order the libraries are loaded may matter.
-     * @return names of shared libraries to be loaded (e.g. "SDL2", "main").
+     * @return names of shared libraries to be loaded (e.g. "SDL2", "plus").
      */
     protected String[] getLibraries() {
         return new String[] {
@@ -114,7 +114,7 @@ public class SDLActivity
                 // "SDL2_mixer",
                 // "SDL2_net",
                 // "SDL2_ttf",
-                "main"
+                "plus"
         };
     }
 
@@ -749,7 +749,7 @@ public class SDLActivity
      * This method is called by SDL using JNI.
      */
     public static boolean showTextInput(int x, int y, int w, int h) {
-        // Transfer the task to the main thread as a Runnable
+        // Transfer the task to the plus thread as a Runnable
         return mSingleton.commandHandler.post(new ShowTextInputTask(x, y, w, h));
     }
 
@@ -808,11 +808,11 @@ public class SDLActivity
      * @throws IOException on errors. Message is set for the SDL error message.
      */
     public static InputStream openAPKExpansionInputStream(String fileName) throws IOException {
-        // Get a ZipResourceFile representing a merger of both the main and patch files
+        // Get a ZipResourceFile representing a merger of both the plus and patch files
         if (expansionFile == null) {
             String mainHint = nativeGetHint("SDL_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION");
             if (mainHint == null) {
-                return null; // no expansion use if no main version was set
+                return null; // no expansion use if no plus version was set
             }
             String patchHint = nativeGetHint("SDL_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION");
             if (patchHint == null) {
@@ -1110,12 +1110,12 @@ class SDLMain implements Runnable {
         String function = SDLActivity.mSingleton.getMainFunction();
         String[] arguments = SDLActivity.mSingleton.getArguments();
 
-        Log.v("SDL", "Running main function " + function + " from library " + library);
+        Log.v("SDL", "Running plus function " + function + " from library " + library);
         //LIMBO: we override
         //SDLActivity.nativeRunMain(library, function, arguments);
         SDLActivity.mSingleton.runSDLMain();
 		//LIMBO
-        Log.v("SDL", "Finished main function");
+        Log.v("SDL", "Finished plus function");
 
         // Native thread has finished, let's finish the Activity
         if (!SDLActivity.mExitCalledFromJava) {
