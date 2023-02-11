@@ -82,6 +82,8 @@ public class ArchDefinitions {
         if (LimboApplication.arch == Config.Arch.x86 || LimboApplication.arch == Config.Arch.x86_64) {
             vgaValues.add("cirrus");
             vgaValues.add("vmware");
+            vgaValues.add("virtio");
+            vgaValues.add("qxl");
         }
 
         //override vga for sun4m (32bit) machines to cg3

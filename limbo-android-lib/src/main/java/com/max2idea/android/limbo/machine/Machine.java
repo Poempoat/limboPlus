@@ -38,13 +38,13 @@ public class Machine extends Observable {
     private String machineType;
     private String cpu = "Default";
     private int cpuNum = 1;
-    private int memory = 128;
-    private int enableMTTCG;
+    private int memory = 1024;
+    private int enableMTTCG = 1;
     private int enableKVM;
     private int disableACPI = 0;
     private int disableHPET = 0;
     private int disableFdBootChk = 0;
-    private int disableTSC = 1; //disabling TSC by default
+    private int disableTSC = 0; //disabling TSC by default
     // Storage
     private String hdaImagePath;
     private String hdbImagePath;
@@ -619,9 +619,9 @@ public class Machine extends Observable {
 
     void setDefaults() {
         if (LimboApplication.arch == Config.Arch.x86 || LimboApplication.arch == Config.Arch.x86_64) {
-            arch = "x86";
-            cpu = "n270";
-            machineType = "pc";
+            arch = "x86_64";
+            cpu = "qemu64";
+            machineType = "q35";
             networkCard = "Default";
             disableTSC = 1;
         } else if (LimboApplication.arch == Config.Arch.arm || LimboApplication.arch == Config.Arch.arm64) {

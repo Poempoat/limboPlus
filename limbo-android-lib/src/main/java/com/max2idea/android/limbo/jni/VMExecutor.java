@@ -213,7 +213,10 @@ private String getQemuLibrary() {
             // more than 1 window
             paramsList.add("-monitor");
             paramsList.add("vc");
-
+            paramsList.add("-device");
+            paramsList.add("qemu-xhci,id=xhci");
+            paramsList.add("-device");
+            paramsList.add("sdhci-pci,id=sdpci");
         } else {
             //XXX: monitor, serial, and parallel display crashes cause SDL doesn't support more than 1 window
             paramsList.add("-monitor");
@@ -224,6 +227,10 @@ private String getQemuLibrary() {
 
             paramsList.add("-parallel");
             paramsList.add("none");
+            paramsList.add("-device");
+            paramsList.add("qemu-xhci,id=xhci");
+            paramsList.add("-device");
+            paramsList.add("sdhci-pci,id=sdpci");
         }
 
         if (getMachine().getKeyboard() != null) {
@@ -232,9 +239,8 @@ private String getQemuLibrary() {
         }
 
         if (getMachine().getMouse() != null && !getMachine().getMouse().equals("ps2")) {
-            paramsList.add("-usb");
             paramsList.add("-device");
-            paramsList.add(getMachine().getMouse());
+            paramsList.add(getMachine().getMouse() + ",bus=xhci.0");
         }
     }
 
@@ -310,7 +316,7 @@ private String getQemuLibrary() {
         // doesn't work for x86 guests yet
         if (getMachine().getCpuNum() > 1) {
             paramsList.add("-smp");
-            paramsList.add(getMachine().getCpuNum() + "");
+            paramsList.add(getMachine().getCpuNum() + ",cores=" + getMachine().getCpuNum() + "");
         }
         if (getMachineType() != null && !getMachineType().equals("Default")) {
             paramsList.add("-M");
@@ -652,7 +658,7 @@ private String getQemuLibrary() {
                 paramsList.add(sdImagePath);
             } else {
                 paramsList.add("-device");
-                paramsList.add("sd-card,drive=sd0,bus=sd-bus");
+                paramsList.add("sd-card,drive=sd0,bus=sdpci.0");
                 paramsList.add("-drive");
                 String param = "if=none,id=sd0";
                 if (!sdImagePath.equals("")) {
