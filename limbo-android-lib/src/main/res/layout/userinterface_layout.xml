@@ -30,7 +30,7 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:padding="10dp"
-            android:text="User Interface"
+            android:text="@string/ui"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Display "
+                android:text="@string/DisplayMode"
                 android:textSize="15sp" />
 
             <Spinner
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|center_vertical"
                 android:gravity="right|center_vertical"
-                android:text="Keyboard"
+                android:text="@string/keyboard"
                 android:textSize="15sp" />
 
             <Spinner
@@ -147,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|center_vertical"
                 android:gravity="right|center_vertical"
-                android:text="Mouse"
+                android:text="@string/Mouse"
                 android:textSize="15sp" />
 
             <Spinner

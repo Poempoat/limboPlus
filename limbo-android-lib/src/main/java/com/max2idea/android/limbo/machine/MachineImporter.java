@@ -188,6 +188,9 @@ public class MachineImporter {
                             case "BOOT_CONFIG":
                                 mach.setBootDevice(machineAttr[i].replace("\"", ""));
                                 break;
+                            case "BIOS_CONFIG":
+                                mach.setBios(machineAttr[i].replace("\"", ""));
+                                break;
                             case "KERNEL":
                                 mach.setKernel(machineAttr[i].replace("\"", ""));
                                 break;

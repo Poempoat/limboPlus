@@ -74,7 +74,7 @@ public class Config {
     // App config
     public static final String APP_NAME = "Limbo Emulator";
 
-    public static final String defaultDNSServer = "8.8.8.8";
+    public static final String defaultDNSServer = "114.114.114.114";
     // App Config
     public static final String downloadLink = "https://github.com/limboemu/limbo/wiki/Downloads";
     public static final String guidesLink = "https://github.com/limboemu/limbo/wiki/Guides";

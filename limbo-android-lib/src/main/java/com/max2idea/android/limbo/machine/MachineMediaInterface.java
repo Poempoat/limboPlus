@@ -19,5 +19,5 @@ Copyright (C) Max Kastanas 2012
 package com.max2idea.android.limbo.machine;
 
 public enum MachineMediaInterface {
-    IDE, SCSI, VIRTIO
+    NONE, IDE, SCSI, VIRTIO
 }

@@ -158,6 +158,7 @@ public class LimboActivity extends AppCompatActivity
     // misc
     private Spinner mRamSize;
     private Spinner mBootDevices;
+    private Spinner mBios;
     private Spinner mNetworkCard;
     private Spinner mNetConfig;
     private Spinner mVGAConfig;
@@ -453,6 +454,18 @@ public class LimboActivity extends AppCompatActivity
             }
         });
 
+        mBios.setOnItemSelectedListener(new OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                if (getMachine() == null)
+                    return;
+
+                String biosDev = (String) ((ArrayAdapter<?>) mBios.getAdapter()).getItem(position);
+                notifyFieldChange(MachineProperty.BIOS_CONFIG, biosDev);
+            }
+
+            public void onNothingSelected(AdapterView<?> parentView) {
+            }
+        });
         mNetConfig.setOnItemSelectedListener(new OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 if (getMachine() == null)
@@ -808,6 +821,7 @@ public class LimboActivity extends AppCompatActivity
             return;
 
         final String[] items = {
+                "none",
                 "ide",
                 "scsi",
                 "virtio"
@@ -919,6 +933,7 @@ public class LimboActivity extends AppCompatActivity
         mHDD.setOnItemSelectedListener(null);
         mSharedFolder.setOnItemSelectedListener(null);
         mBootDevices.setOnItemSelectedListener(null);
+        mBios.setOnItemSelectedListener(null);
         mKernel.setOnItemSelectedListener(null);
         mInitrd.setOnItemSelectedListener(null);
         mAppend.setOnFocusChangeListener(null);
@@ -1236,6 +1251,7 @@ public class LimboActivity extends AppCompatActivity
         populateRAM();
         populateDisks();
         populateBootDevices();
+        populateBios();
         populateNet();
         populateNetDevices(null);
         populateVGA();
@@ -1405,6 +1421,7 @@ public class LimboActivity extends AppCompatActivity
 
         //boot
         mBootDevices.setEnabled(flag);
+        mBios.setEnabled(flag);
         mKernel.setEnabled(flag);
         mInitrd.setEnabled(flag);
         mAppend.setEnabled(flag);
@@ -1633,6 +1650,7 @@ public class LimboActivity extends AppCompatActivity
 
         //boot
         mBootDevices = findViewById(R.id.bootfromval);
+        mBios = findViewById(R.id.biosval);
         mKernel = findViewById(R.id.kernelval);
         mInitrd = findViewById(R.id.initrdval);
         mAppend = findViewById(R.id.appendval);
@@ -1921,6 +1939,7 @@ public class LimboActivity extends AppCompatActivity
             mBootSectionSummary.setText("");
         else {
             String text = "Boot from: " + getMachine().getBootDevice();
+            text = appendDriveFilename(getMachine().getBios(), text, "bios", false);
             text = appendDriveFilename(getMachine().getKernel(), text, "kernel", false);
             text = appendDriveFilename(getMachine().getInitRd(), text, "initrd", false);
             text = appendDriveFilename(getMachine().getAppend(), text, "append", false);
@@ -2102,6 +2121,7 @@ public class LimboActivity extends AppCompatActivity
 
         // Advance
         SpinnerAdapter.setDiskAdapterValue(mBootDevices, getMachine().getBootDevice());
+        SpinnerAdapter.setDiskAdapterValue(mBios, getMachine().getBios());
         SpinnerAdapter.setDiskAdapterValue(mNetConfig, getMachine().getNetwork());
         SpinnerAdapter.setDiskAdapterValue(mVGAConfig, getMachine().getVga());
         SpinnerAdapter.setDiskAdapterValue(mSoundCard, getMachine().getSoundCard());
@@ -2465,6 +2485,25 @@ public class LimboActivity extends AppCompatActivity
         bootDevAdapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_item);
         mBootDevices.setAdapter(bootDevAdapter);
         mBootDevices.invalidate();
+    }
+
+    private void populateBios() {
+        ArrayList<String> biosList = new ArrayList<>();
+        biosList.add("Default");
+        biosList.add("SeaBios(x86)");
+        biosList.add("SeaBios(x64)");
+        biosList.add("vmwareEFI(x64)");
+        biosList.add("ovmfEFI(x86)");
+        biosList.add("ovmfEFI(x64)");
+        biosList.add("ovmfEFI(arm)");
+        biosList.add("ovmfEFI(aarch64)");
+
+        String[] arraySpinner = biosList.toArray(new String[0]);
+
+        ArrayAdapter<String> biosDevAdapter = new ArrayAdapter<>(this, R.layout.custom_spinner_item, arraySpinner);
+        biosDevAdapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_item);
+        mBios.setAdapter(biosDevAdapter);
+        mBios.invalidate();
     }
 
     private void populateNet() {

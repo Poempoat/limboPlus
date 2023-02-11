@@ -32,7 +32,7 @@
             android:layout_gravity="center|center_vertical"
             android:gravity="center|center_vertical"
             android:padding="10dp"
-            android:text="Boot"
+            android:text="@string/boot"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -77,11 +77,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Boot from Device: "
+                android:text="@string/boot_from_device"
                 android:textSize="15sp" />
 
             <Spinner
                 android:id="@+id/bootfromval"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/biosl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:src="@drawable/sysfile" />
+
+            <TextView
+                android:id="@+id/biosstr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Bios: "
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/biosval"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -170,7 +202,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Append: "
+                android:text="@string/append"
                 android:textSize="15sp" />
 
             <EditText

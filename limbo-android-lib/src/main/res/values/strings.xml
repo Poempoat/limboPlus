@@ -358,7 +358,7 @@
     <string name="Network">Network</string>
     <string name="NicCard">NIC Card</string>
     <string name="DNSServer">DNS Server</string>
-    <string name="HostForward">Host Forward</string>
+    <string name="HostForward">Host Forward:</string>
     <string name="EnableQMPForChangingDrives">Enable QMP in settings to change removable drives</string>
     <string name="SetVNCPassword">Set VNC Password</string>
     <string name="EnableVNCPassword">Enable VNC Password (recommended)</string>
@@ -400,4 +400,14 @@
     <string name="fda">Floppy A:</string>
     <string name="fdb">Floppy B:</string>
     <string name="sdcard">SD Card:</string>
+    <string name="networktype">Network Type:</string>
+    <string name="networkcard">Network Card:</string>
+    <string name="DNS">DNS Server:</string>
+    <string name="boot">Boot</string>
+    <string name="boot_from_device">Boot From Device:</string>
+    <string name="append">Append:</string>
+    <string name="graphic">Graphic</string>
+    <string name="video_display">Video Display:</string>
+    <string name="ui">User Interface</string>
+    <string name="displayMode">Display Mode:</string>
 </resources>

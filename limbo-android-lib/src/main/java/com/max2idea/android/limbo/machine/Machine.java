@@ -69,6 +69,7 @@ public class Machine extends Observable {
     private String cdInterface = "ide";
     // Default Settings
     private String bootDevice = "Default";
+    private String bios = "Default";
     private String kernel;
     private String initRd;
     private String append;
@@ -469,6 +470,16 @@ public class Machine extends Observable {
             this.bootDevice = bootDevice;
             setChanged();
             notifyChanged(MachineProperty.BOOT_CONFIG, bootDevice);
+        }
+    }
+    public String getBios() {
+        return bios;
+    }
+    void setBios(String bios) {
+        if (this.bios == null || !this.bios.equals(bios)) {
+            this.bios = bios;
+            setChanged();
+            notifyChanged(MachineProperty.BIOS_CONFIG, bios);
         }
     }
 

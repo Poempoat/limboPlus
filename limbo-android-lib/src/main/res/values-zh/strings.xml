@@ -278,7 +278,7 @@
     <string name="Mouse">鼠标</string>
     <string name="ShowLog">显示日志</string>
     <string name="DNSServer">DNS服务器</string>
-    <string name="HostForward">端口映射</string>
+    <string name="HostForward">端口映射：</string>
     <string name="TouchScreenTitle">触摸屏幕</string>
     <string name="UsingKeyMapper">正在使用按键映射器</string>
     <string name="other">其它</string>
@@ -393,5 +393,15 @@
     <string name="fda">软盘A：</string>
     <string name="fdb">软盘B：</string>
     <string name="sdcard">SD卡：</string>
+    <string name="networktype">网络类型：</string>
+    <string name="networkcard">网卡：</string>
+    <string name="DNS">DNS服务器：</string>
+    <string name="boot">启动</string>
+    <string name="boot_from_device">优先启动位置：</string>
+    <string name="append">附加：</string>
+    <string name="graphic">图像</string>
+    <string name="video_display">显示卡：</string>
+    <string name="ui">用户界面</string>
+    <string name="displayMode">显示模式：</string>
 
 </resources>

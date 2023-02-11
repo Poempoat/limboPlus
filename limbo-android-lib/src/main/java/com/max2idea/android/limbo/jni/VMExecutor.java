@@ -490,6 +490,11 @@ private String getQemuLibrary() {
             paramsList.add(getBootDevice());
         }
 
+        if (getBios() != null) {
+            paramsList.add("-bios");
+            paramsList.add(getBios());
+        }
+
         String kernel = getKernel();
         if (kernel != null && !kernel.equals("")) {
             paramsList.add("-kernel");
@@ -519,6 +524,29 @@ private String getQemuLibrary() {
             return "a";
         } else if (getMachine().getBootDevice().equals("Hard Disk")) {
             return "c";
+        }
+        return null;
+    }
+
+    private String getBios() {
+        if (LimboApplication.arch == Config.Arch.arm || LimboApplication.arch == Config.Arch.arm64) {
+            return null;
+        } else if (getMachine().getBios().equals("Default")) {
+            return null;
+        } else if (getMachine().getBios().equals("SeaBios(x86)")) {
+            return "bios.bin";
+        } else if (getMachine().getBios().equals("SeaBios(x64)")) {
+            return "bios-256k.bin";
+        } else if (getMachine().getBios().equals("vmwareEFI(x64)")) {
+            return "VMWARE_EFI.fd";
+        } else if (getMachine().getBios().equals("ovmfEFI(x86)")) {
+            return "OVMF-pure-efi.fd";
+        } else if (getMachine().getBios().equals("ovmfEFI(x64)")) {
+            return "OVMF-pure-efi64.fd";
+        } else if (getMachine().getBios().equals("ovmfEFI(arm)")) {
+            return "OVMF-arm.fd";
+        } else if (getMachine().getBios().equals("ovmfEFI(aarch64)")) {
+            return "OVMF-arm64.fd";
         }
         return null;
     }

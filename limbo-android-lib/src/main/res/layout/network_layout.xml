@@ -30,7 +30,7 @@
             android:layout_gravity="center|center_vertical"
             android:gravity="center|center_vertical"
             android:padding="10dp"
-            android:text="Network"
+            android:text="@string/Network"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Network: "
+                android:text="@string/networktype"
                 android:textSize="15sp" />
 
             <Spinner
@@ -106,7 +106,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Network Card: "
+                android:text="@string/networkcard"
                 android:textSize="15sp" />
 
             <Spinner
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="DNS Server: "
+                android:text="@string/DNS"
                 android:textSize="15sp" />
 
             <EditText
@@ -151,7 +151,7 @@
                 android:gravity="right"
                 android:inputType="textFilter|textNoSuggestions"
                 android:singleLine="true"
-                android:text="8.8.8.8"
+                android:text="114.114.114.114"
                 android:textSize="15sp" />
         </LinearLayout>
 
@@ -168,7 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Host Forward: "
+                android:text="@string/HostForward"
                 android:textSize="15sp" />
 
             <EditText
