@@ -1,6 +1,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="Files">
+    <PreferenceCategory android:title="@string/Files">
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="EnableLegacyFileManager"
@@ -8,7 +8,7 @@
             android:title="@string/EnableLegacyFileManager" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="Screen">
+    <PreferenceCategory android:title="@string/screen">
         <ListPreference
             android:defaultValue="0"
             android:entries="@array/orientationLabels"
@@ -26,8 +26,8 @@
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="ShowFullscreen"
-            android:summary="Show Fullscreen"
-            android:title="Fullscreen" />
+            android:summary="@string/showfullscreen"
+            android:title="@string/fullscreen" />
 
         <ListPreference
             android:defaultValue="3"
@@ -60,7 +60,7 @@
             android:title="@string/mouseButtonDelay" />
 
     </PreferenceCategory>
-    <PreferenceCategory android:title="Advanced">
+    <PreferenceCategory android:title="@string/advanced">
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="HighPrio"
@@ -107,7 +107,7 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="Disk">
+    <PreferenceCategory android:title="@string/disk">
         <ListPreference
             android:defaultValue="@string/Default"
             android:entries="@array/diskCacheLabels"
@@ -117,7 +117,7 @@
             android:title="@string/diskCache" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="Fixes">
+    <PreferenceCategory android:title="@string/fixes">
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="ignoreBreakpointInvalidation"

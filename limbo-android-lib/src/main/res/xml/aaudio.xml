@@ -1,6 +1,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="Audio">
+    <PreferenceCategory android:title="@string/Audio">
 
         <CheckBoxPreference
             android:defaultValue="false"

@@ -1,5 +1,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="Updates">
+    <PreferenceCategory android:title="@string/updates">
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="updateVersionPrompt"

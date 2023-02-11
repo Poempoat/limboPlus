@@ -27,7 +27,7 @@
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
             android:padding="10dp"
-            android:text="Board"
+            android:text="@string/board"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Machine Type:"
+                android:text="@string/MachineType"
                 android:textSize="15sp" />
 
             <Spinner
@@ -103,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="CPU Model: "
+                android:text="@string/CPUModel"
                 android:textSize="15sp" />
 
             <Spinner
@@ -130,7 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="CPU Cores: "
+                android:text="@string/cpucores"
                 android:textSize="15sp" />
 
             <Spinner
@@ -157,7 +157,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="RAM Memory (MB) "
+                android:text="@string/RAM"
                 android:textSize="15sp" />
 
             <Spinner
@@ -198,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:gravity="right|center_vertical"
-                    android:text="Enable  MTTCG"
+                    android:text="@string/enableMTTCG"
                     android:textSize="15sp" />
 
                 <CheckBox
@@ -226,7 +226,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:gravity="right|center_vertical"
-                    android:text="Enable KVM"
+                    android:text="@string/EnableKVM"
                     android:textSize="15sp" />
 
                 <CheckBox
@@ -260,7 +260,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:gravity="right|center_vertical"
-                    android:text="Disable HPET"
+                    android:text="@string/disableHPET"
                     android:textSize="15sp" />
 
                 <CheckBox
@@ -288,7 +288,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:gravity="right|center_vertical"
-                    android:text="Disable TSC"
+                    android:text="@string/disableTSC"
                     android:textSize="15sp" />
 
                 <CheckBox
@@ -323,7 +323,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="right|center_vertical"
                     android:gravity="right|center_vertical"
-                    android:text="Disable ACPI"
+                    android:text="@string/disableACPI"
                     android:textSize="15sp" />
 
                 <CheckBox

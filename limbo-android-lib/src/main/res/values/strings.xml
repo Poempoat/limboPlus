@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Limbo Emulator</string>
-    <string name="app_short_name">Limbo</string>
+    <string name="app_name">Limbo Plus Enhanced x86</string>
+    <string name="app_short_name" translatable="false">Limbo Plus</string>
     <string name="address_caption">Address</string>
-    <string name="alt_check">Alt</string>
+    <string name="alt_check" translatable="false">Alt</string>
     <string name="arrow_down">Down Arrow</string>
     <string name="arrow_left">Left Arrow</string>
     <string name="arrow_right">Right Arrow</string>
@@ -89,6 +89,7 @@
     <string name="shift_check">Shift</string>
     <string name="shortcut_label">VNC Connection</string>
     <string name="showkbd_label">Keyboard</string>
+    <string name="board">Board</string>
     <string name="special_keys">Special Keys</string>
     <string name="username_caption">Username</string>
     <string name="username_hint">For Windows Authentication</string>
@@ -103,7 +104,7 @@
     <string name="ui_mode">UI Mode</string>
     <string name="display">Display</string>
     <string name="absolutePointerInstructions">Make sure the guest os supports touch screen devices!\n\n \
-        Choose Mouse = \"usb-tablet\" from Limbo before you boot the machine.</string>
+        Choose Mouse = \"usb-tablet\" from Limbo Plus before you boot the machine.</string>
     <string name="externalMouseInstructions">Plug in your USB/Bluetooth Mouse in your Android device.</string>
     <string name="reconnect">Reconnect</string>
     <string name="calibrate_mouse">Calibrate (Fix) Mouse</string>
@@ -116,7 +117,7 @@
     <string name="use_keymapper">Use Key Mapper</string>
     <string name="add_special_keys">Add Special Keys/Buttons</string>
     <string name="remove_key_mapper">Remove Key Mapper</string>
-    <string name="welcomeText">Welcome to Limbo Emulator, a port of QEMU for Android devices. Limbo can emulate several operating systems. For links to downloads, guides, and virtual disk images visit the Limbo Wiki. Download software and images only from trusted websites!"</string>
+    <string name="welcomeText">Welcome to Limbo Plus Enhanced, It is base on Limbo Emulator and is a port of QEMU for Android devices. Limbo Plus can emulate most of PC operating systems. For links to downloads, guides, and virtual disk images visit the Limbo Wiki. Download software and images only from trusted websites!</string>
     <string name="checkForUpdates">Check for Updates on Startup</string>
     <string name="sdcardNotMounted">Error: SD card is not mounted</string>
     <string name="fixesMouseParen">(Fixes Mouse)</string>
@@ -134,12 +135,17 @@
     <string name="toolbarOn">Toolbar On</string>
     <string name="mouse">Mouse</string>
     <string name="fullscreen">Fullscreen</string>
+    <string name="showfullscreen">Show Fullscreen</string>
     <string name="externalVncOn">External VNC Server: On</string>
     <string name="externalQMPServerOn">External QMP Server: On</string>
     <string name="desktopMode">Desktop Mode</string>
     <string name="highPriorityWarning">Warning! High Priority might increase emulation speed but will slow your phone down!"</string>
-    <string name="sharedFolderWarning">Warning! Enabling Shared folder is buggy under Limbo.\nIf you use Storage Cleaning apps exclude this folder. \nMake sure you keep a backup of your files. Pausing the Virtual Machine is not supported with this feature. \nIf you experience crashes disable this option. \nDo you want to continue?</string>
+    <string name="sharedFolderWarning">Warning! Enabling Shared folder is buggy under Limbo Plus.\nIf you use Storage Cleaning apps exclude this folder. \nMake sure you keep a backup of your files. Pausing the Virtual Machine is not supported with this feature. \nIf you experience crashes disable this option. \nDo you want to continue?</string>
     <string name="advancedTools">Advanced Tools</string>
+    <string name="advanced">Advanced</string>
+    <string name="cpucores">CPU Cores:</string>
+    <string name="RAM">RAM Memory (MB) </string>
+    <string name="disableACPI">Disable ACPI</string>
     <string name="linksInstructions">Get Full Qwerty Keyboard, Download Manager for ISO and virtual disks images, SSH/FTP Client for network connection</string>
     <string name="discardVMState">Discard VM State</string>
     <string name="discardVMInstructions">The VM is Paused. If you discard the state you might lose data. Continue?</string>
@@ -149,8 +155,11 @@
     <string name="externalNetworkWarning">Warning! Enabling external network for images you don\'t trust or containing old OSes is not recommended. If not use network \'None\' before running the virtual machine.\n</string>
     <string name="faq">FAQ</string>
     <string name="open">Open</string>
+    <string name="disk">Disk</string>
+    <string name="fixes">Fixes</string>
+    <string name="updates">Updates</string>
     <string name="enableMTTCG">Enable MTTCG</string>
-    <string name="enableMTTCGWarning">Warning! Enabling MTTCG under Limbo is not fully tested. \nYou need to have an Android Devices with multi core CPU. If you don\'t know what this is press Cancel.\n\nIf you experience app crashing or freezing disable this option. Do you want to continue?</string>
+    <string name="enableMTTCGWarning">Warning! Enabling MTTCG under Limbo Plus is not fully tested. \nYou need to have an Android Devices with multi core CPU. If you don\'t know what this is press Cancel.\n\nIf you experience app crashing or freezing disable this option. Do you want to continue?</string>
     <string name="mttcgHelp">MTTCG Help</string>
     <string name="failToCreateMachineDirError">Could not create internal machine directory</string>
     <string name="externalVNCWarning">VNC connections are Unencrypted therefore NOT secure. Make sure you\'re on a trusted network!\n</string>
@@ -166,10 +175,12 @@
     <string name="qmpServer">QMP server</string>
     <string name="Enable">Enable</string>
     <string name="ImportMachines">Import Machines</string>
+    <string name="MachineType">Machine Type:</string>
     <string name="DeleteVM">Delete VM</string>
     <string name="deleteVMWarning">Delete VM? Only machine definition and state will be deleted, disk images files will not be deleted</string>
     <string name="NoMachineSelected">No Machine selected</string>
     <string name="multipleVCPU">Multiple vCPUs</string>
+    <string name="CPUModel">CPU Model:</string>
     <string name="multipleVCPUWarning">Warning! Setting Multiple Virtual CPUs will NOT result in additional performance unless you use KVM or MTTCG. Your device might even be slow or the Guest OS might hang so it is advised to use 1 CPU. \n\n</string>
     <string name="disableTSCInstructions">If your guest OS is not able to boot check option \'Disable TSC\' and restart the VM.</string>
     <string name="DoYouWantToContinue">Do you want to continue?</string>
@@ -191,6 +202,7 @@
     <string name="InstallingBIOS">Installing BIOS</string>
     <string name="CouldNotOpenDocFile">Could not open DocumentFile</string>
     <string name="PleaseReassingYourDiskFiles">Please re-open your disk files from the file manager</string>
+    <string name="Files">Files</string>
     <string name="RemovableDrives">Removable Drives</string>
     <string name="VNCReconnecting">VNC Reconnecting</string>
     <string name="EjectedDevice">Ejected device</string>
@@ -200,9 +212,9 @@
     <string name="ExportFilenameCannotBeEmpty">Export filename cannot be empty</string>
     <string name="ChangeDirectory">Change Directory</string>
     <string name="Export">Export</string>
-    <string name="threeBySix">3x6</string>
-    <string name="fourByEight">4x8</string>
-    <string name="fiveByTen">5x10</string>
+    <string name="threeBySix" translatable="false">3x6</string>
+    <string name="fourByEight" translatable="false">4x8</string>
+    <string name="fiveByTen" translatable="false">5x10</string>
     <string name="InstallRoms">Install Roms</string>
     <string name="CreateMachine">Create machine</string>
     <string name="DeleteMachine">Delete Machine</string>
@@ -240,6 +252,7 @@
     <string name="CheckSoftwareUpdatesSummary">Check for software updates on startup</string>
     <string name="FailedToSaveLogFile">\"Failed to save log file: \"</string>
     <string name="SharedFolder">Shared Folder</string>
+    <string name="Audio">Audio</string>
     <string name="AudioCard">Audio Card</string>
     <string name="IAcknowledge">I Acknowledge</string>
     <string name="NewMachineName">New Machine Name</string>
@@ -262,6 +275,7 @@
     <string name="EnableKVM">Enable KVM</string>
     <string name="server">Server</string>
     <string name="ExtraParams">Extra Params</string>
+    <string name="ExtraQEMUParams">Extra QEMU Params:</string>
     <string name="MachineResolution">Machine resolution</string>
     <string name="Warning">Warning</string>
     <string name="MachineResoultionWarning">Machine Resolution is too high for Desktop Mode. Scaling will be used and Mouse Alignment will not be accurate. Reduce display resolution within the Guest OS for better experience.\n\n</string>
@@ -283,9 +297,10 @@
     <string name="NoRemovableDevicesAttached">No removable devices attached</string>
     <string name="MapperExistsChooseAnotherName">Mapper name exists, choose another name</string>
     <string name="ClearedKey">Cleared Key</string>
+    <string name="screen">Screen</string>
     <string name="FitToScreenDisableDesktopMode">Fit to Screen Disabled under Desktop Mode</string>
     <string name="StretchScreenDisabledDesktopMode">Stretch Screen Disabled under Desktop Mode</string>
-    <string name="NoVMSelectedRestart">No VM selected, restart Limbo!</string>
+    <string name="NoVMSelectedRestart">No VM selected, restart Limbo Plus!</string>
     <string name="ResizingPleaseWait">Resizing, Please Wait</string>
     <string name="TrackpadEnabled">Trackpad Enabled</string>
     <string name="ExternalMouseEnabled">External Mouse Enabled</string>
@@ -300,7 +315,7 @@
     <string name="KeyMapperEnabled">Key Mapper Enabled</string>
     <string name="CouldNotSetVNCPass">Could not set VNC Password</string>
     <string name="MachinesExported">Machines exported</string>
-    <string name="LimboLog">Limbo Log</string>
+    <string name="LimboLog">Limbo Plus Log</string>
     <string name="CHANGELOG">CHANGELOG</string>
     <string name="WriteAccess">Write Access</string>
     <string name="FilePathNotSupportedWarning">File path is not supported. Make sure you choose a file/directory from your internal storage or external sd card. Root and Download Directories are not supported.</string>
@@ -372,4 +387,17 @@
     <string name="IgnoreBreakpointInvalidationSummary">Ignore Breakpoint Invalidation</string>
     <string name="ImportBIOSFile">Import BIOS</string>
     <string name="importBIOSInstructions">Select a BIOS file (bin, rom, etc..) to import.</string>
+    <string name="save_snapshot">Save Snapshot</string>
+    <string name="disableTSC">Disable TSC</string>
+    <string name="disableHPET">Disable HPET</string>
+    <string name="disks">Disks</string>
+    <string name="hda">Hard Disk A:</string>
+    <string name="hdb">Hard Disk B:</string>
+    <string name="hdc">Hard Disk C:</string>
+    <string name="hdd">Hard Disk D:</string>
+    <string name="removable">Removable</string>
+    <string name="cdrom" translatable="false">CDROM:</string>
+    <string name="fda">Floppy A:</string>
+    <string name="fdb">Floppy B:</string>
+    <string name="sdcard">SD Card:</string>
 </resources>

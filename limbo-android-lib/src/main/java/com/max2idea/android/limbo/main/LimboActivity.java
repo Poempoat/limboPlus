@@ -1154,7 +1154,7 @@ public class LimboActivity extends AppCompatActivity
         t.start();
     }
 
-    //XXX: this needs to be called from the main thread otherwise
+    //XXX: this needs to be called from the plus thread otherwise
     //  qemu crashes when it is started later
     public void setupNativeLibs() {
         if (libLoaded)
@@ -2206,11 +2206,11 @@ public class LimboActivity extends AppCompatActivity
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
         String[] arraySpinner = new String[5];
-        arraySpinner[0] = "1GB (Growable)";
-        arraySpinner[1] = "2GB (Growable)";
-        arraySpinner[2] = "4GB (Growable)";
-        arraySpinner[3] = "10 GB (Growable)";
-        arraySpinner[4] = "20 GB (Growable)";
+        arraySpinner[0] = "32 GB (Growable)";
+        arraySpinner[1] = "64 GB (Growable)";
+        arraySpinner[2] = "128GB (Growable)";
+        arraySpinner[3] = "256GB (Growable)";
+        arraySpinner[4] = "512GB (Growable)";
 
         ArrayAdapter<?> sizeAdapter = new ArrayAdapter<Object>(this, R.layout.custom_spinner_item, arraySpinner);
         sizeAdapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_item);

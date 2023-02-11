@@ -25,12 +25,12 @@
 
         <TextView
             android:id="@+id/audiosectionStr"
+            android:text="@string/Audio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_vertical"
             android:gravity="center|center_vertical"
             android:padding="10dp"
-            android:text="Audio"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Sound Card: "
+                android:text="@string/AudioCard"
                 android:textSize="15sp" />
 
             <Spinner

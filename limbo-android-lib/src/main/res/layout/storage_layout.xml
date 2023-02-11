@@ -29,7 +29,7 @@
             android:layout_gravity="center|center_vertical"
             android:gravity="center|center_vertical"
             android:padding="10dp"
-            android:text="Disks"
+            android:text="@string/disks"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Hard Disk A: "
+                android:text="@string/hda"
                 android:textSize="15sp" />
 
             <Spinner
@@ -107,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Hard Disk B: "
+                android:text="@string/hdb"
                 android:textSize="15sp" />
 
             <Spinner
@@ -141,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Hard Disk C: "
+                android:text="@string/hdc"
                 android:textSize="15sp" />
 
             <Spinner
@@ -175,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Hard Disk D: "
+                android:text="@string/hdd"
                 android:textSize="15sp" />
 
             <Spinner
@@ -207,7 +207,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Shared Folder "
+                android:text="@string/SharedFolder"
                 android:textSize="15sp" />
 
             <Spinner

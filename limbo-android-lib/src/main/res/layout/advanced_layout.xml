@@ -31,7 +31,7 @@
             android:layout_gravity="center|center_vertical"
             android:gravity="center|center_vertical"
             android:padding="10dp"
-            android:text="Advanced"
+            android:text="@string/advanced"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="Extra QEMU Params: "
+                android:text="@string/ExtraQEMUParams"
                 android:textSize="15sp" />
 
             <EditText
