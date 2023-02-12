@@ -739,6 +739,8 @@ public class KeySurfaceView extends SurfaceView implements SurfaceHolder.Callbac
             text = "Scrl";
         else if (keycode == KeyEvent.KEYCODE_NUM_LOCK)
             text = "NumL";
+        else if (keycode == KeyEvent.KEYCODE_WINDOW)
+            text = "Win";
         else if (keycode == KeyEvent.KEYCODE_F1)
             text = "F1";
         else if (keycode == KeyEvent.KEYCODE_F2)

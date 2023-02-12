@@ -127,8 +127,8 @@ public class ArchDefinitions {
 
     public static ArrayList<String> getMachineValues(Context context) {
         ArrayList<String> machinesList = new ArrayList<>();
-        machinesList.add("None");
-        machinesList.add("New");
+        machinesList.add(context.getString(R.string.none));
+        machinesList.add(context.getString(R.string.newtext));
         return machinesList;
     }
 

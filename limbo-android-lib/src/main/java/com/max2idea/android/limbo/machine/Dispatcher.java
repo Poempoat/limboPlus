@@ -262,9 +262,9 @@ public class Dispatcher implements ViewListener {
         Object[] params = (Object[]) value;
         MachineProperty machineDriveName = (MachineProperty) params[0];
         String diskFileValue = (String) params[1];
-        if (diskFileValue.equals("None") && isDriveEnabled(machineDriveName)) {
+        if (diskFileValue.equals("None") && diskFileValue.equals("无") && isDriveEnabled(machineDriveName)) {
             setDriveValue(machineDriveName, "");
-        } else if (diskFileValue.equals("None") || !isDriveEnabled(machineDriveName)) {
+        } else if (diskFileValue.equals("None") || diskFileValue.equals("无") || !isDriveEnabled(machineDriveName)) {
             setDriveValue(machineDriveName, null);
         } else if (isDriveEnabled(machineDriveName)) {
             setDriveValue(machineDriveName, diskFileValue);

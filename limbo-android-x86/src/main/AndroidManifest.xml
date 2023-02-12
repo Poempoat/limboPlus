@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.limbo.emu.plus"
-    android:versionCode="20000"
-    android:versionName="2.0.0-x86">
+    android:versionCode="20001"
+    android:versionName="2.0.1-x86">
 
     <application
         tools:replace="android:label"

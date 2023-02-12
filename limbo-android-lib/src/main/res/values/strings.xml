@@ -324,9 +324,9 @@
     <string name="OkIUnderstand">OK, I understand</string>
     <string name="SendText">Send Text</string>
     <string name="Send">Send</string>
-    <string name="GoToWiki">Online Wiki</string>
+    <string name="GoToWiki">GITHUB</string>
     <string name="DoNotShowAgain">Do not Show Again</string>
-    <string name="GenNewVersion">Get New Version</string>
+    <string name="GenNewVersion">Get New Version(Password:5kat)</string>
     <string name="Cancel">Cancel</string>
     <string name="Delete">Delete</string>
     <string name="KeyMapper">Key Mapper</string>
@@ -410,4 +410,18 @@
     <string name="video_display">Video Display:</string>
     <string name="ui">User Interface</string>
     <string name="displayMode">Display Mode:</string>
+    <string name="enableAVX">Enable AVX</string>
+    <string name="BIOSInstall">BIOS and keymap files installed</string>
+    <string name="hdd32G">32G (Growable)</string>
+    <string name="hdd64G">64G (Growable)</string>
+    <string name="hdd128G">128G (Growable)</string>
+    <string name="hdd256G">256G (Growable)</string>
+    <string name="hdd512G">512G (Growable)</string>
+    <string name="enableKVM">Enable KVM</string>
+    <string name="CPUCores">" CPU(s)"</string>
+    <string name="none">None</string>
+    <string name="newtext">New</string>
+    <string name="videocard">Video Card:</string>
+    <string name="boot_from">Boot from:</string>
+    <string name="empty">: Empty</string>
 </resources>

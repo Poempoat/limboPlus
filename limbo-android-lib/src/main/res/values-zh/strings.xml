@@ -259,9 +259,9 @@
     <string name="OkIUnderstand">是，我明白了</string>
     <string name="SendText">发送文本</string>
     <string name="Send">发送</string>
-    <string name="GoToWiki">在线Wiki</string>
+    <string name="GoToWiki">GITHUB</string>
     <string name="DoNotShowAgain">不再显示</string>
-    <string name="GenNewVersion">获取新版本</string>
+    <string name="GenNewVersion">获取新版本（密码：5kat）</string>
     <string name="Cancel">取消</string>
     <string name="Delete">删除</string>
     <string name="KeyMapper">按键映射器</string>
@@ -353,9 +353,9 @@
     <string name="KeyMapperName">按键映射器名称</string>
     <string name="DownloadsOSes">下载OSes</string>
     <string name="ExportFilename">要导出的文件名</string>
-    <string name="ImageName">映像名</string>
+    <string name="ImageName">要新建的磁盘映像名称</string>
     <string name="NewDirectory">新建目录</string>
-    <string name="Volume">卷</string>
+    <string name="Volume">音量</string>
     <string name="DisplayMode">显示模式</string>
     <string name="VNCPassword">VNC密码</string>
     <string name="NewVersion">新版本</string>
@@ -403,5 +403,19 @@
     <string name="video_display">显示卡：</string>
     <string name="ui">用户界面</string>
     <string name="displayMode">显示模式：</string>
+    <string name="enableAVX">启用AVX</string>
+    <string name="BIOSInstall">已安装BIOS和键盘文件</string>
+    <string name="hdd32G">32G（动态扩展）</string>
+    <string name="hdd64G">64G（动态扩展）</string>
+    <string name="hdd128G">128G（动态扩展）</string>
+    <string name="hdd256G">256G（动态扩展）</string>
+    <string name="hdd512G">512G（动态扩展）</string>
+    <string name="enableKVM">启用KVM</string>
+    <string name="CPUCores">" 核CPU"</string>
+    <string name="none">无</string>
+    <string name="newtext">新建</string>
+    <string name="videocard">显示卡：</string>
+    <string name="boot_from">优先启动：</string>
+    <string name="empty">: 空</string>
 
 </resources>

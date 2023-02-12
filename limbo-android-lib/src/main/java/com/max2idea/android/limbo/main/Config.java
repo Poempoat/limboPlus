@@ -76,8 +76,8 @@ public class Config {
 
     public static final String defaultDNSServer = "114.114.114.114";
     // App Config
-    public static final String downloadLink = "https://github.com/limboemu/limbo/wiki/Downloads";
-    public static final String guidesLink = "https://github.com/limboemu/limbo/wiki/Guides";
+    public static final String downloadLink = "https://wwzv.lanzoue.com/b02k2wazc";
+    public static final String guidesLink = "https://github.com/Poempoat/limboPlus";
     public static final String kvmLink = "https://github.com/limboemu/limbo/wiki/KVM";
     public static final String faqLink = "https://github.com/limboemu/limbo/wiki/FAQ";
     public static final String toolsLink = "https://github.com/limboemu/limbo/wiki/Tools";

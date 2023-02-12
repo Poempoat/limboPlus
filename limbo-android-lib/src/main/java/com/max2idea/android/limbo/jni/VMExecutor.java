@@ -338,7 +338,7 @@ private String getQemuLibrary() {
                 else if (LimboApplication.arch == Config.Arch.x86_64)
                     cpu = "qemu64";
             }
-            cpu += ",-tsc";
+            cpu += ",+avx";
         }
 
         if (getMachine().getDisableAcpi() != 0) {

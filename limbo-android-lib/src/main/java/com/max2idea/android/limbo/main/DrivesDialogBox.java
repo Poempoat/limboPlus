@@ -152,9 +152,9 @@ public class DrivesDialogBox extends Dialog implements Observer {
             public void run() {
                 ArrayList<String> oldHDs = MachineFilePaths.getRecentFilePaths(fileType);
                 final ArrayList<String> arraySpinner = new ArrayList<>();
-                arraySpinner.add("None");
+                arraySpinner.add(activity.getString(R.string.none));
                 if (createOption)
-                    arraySpinner.add("New");
+                    arraySpinner.add(activity.getString(R.string.newtext));
                 arraySpinner.add(activity.getString(R.string.open));
                 final int index = arraySpinner.size();
                 for (String file : oldHDs) {

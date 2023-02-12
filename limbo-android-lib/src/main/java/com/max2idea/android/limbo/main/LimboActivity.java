@@ -1877,20 +1877,20 @@ public class LimboActivity extends AppCompatActivity
         if (clear || getMachine() == null || mMachine.getSelectedItemPosition() < 2)
             mCPUSectionSummary.setText("");
         else {
-            String text = "Machine Type: " + getMachine().getMachineType()
+            String text = getString(R.string.MachineType) + getMachine().getMachineType()
                     + ", CPU: " + getMachine().getCpu()
-                    + ", " + getMachine().getCpuNum() + " CPU" + ((getMachine().getCpuNum() > 1) ? "s" : "")
+                    + ", " + getMachine().getCpuNum() + getString(R.string.CPUCores) + ""
                     + ", " + getMachine().getMemory() + " MB";
             if (mEnableMTTCG.isChecked())
-                text = appendOption("Enable MTTCG", text);
+                text = appendOption(getString(R.string.enableMTTCG), text);
             if (mEnableKVM.isChecked())
-                text = appendOption("Enable KVM", text);
+                text = appendOption(getString(R.string.enableKVM), text);
             if (mDisableACPI.isChecked())
-                text = appendOption("Disable ACPI", text);
+                text = appendOption(getString(R.string.disableACPI), text);
             if (mDisableHPET.isChecked())
-                text = appendOption("Disable HPET", text);
+                text = appendOption(getString(R.string.disableHPET), text);
             if (mDisableTSC.isChecked())
-                text = appendOption("Disable TSC", text);
+                text = appendOption(getString(R.string.enableAVX), text);
             mCPUSectionSummary.setText(text);
         }
     }
@@ -1938,7 +1938,7 @@ public class LimboActivity extends AppCompatActivity
         if (clear || getMachine() == null || mMachine.getSelectedItemPosition() < 2)
             mBootSectionSummary.setText("");
         else {
-            String text = "Boot from: " + getMachine().getBootDevice();
+            String text = getString(R.string.boot_from) + getMachine().getBootDevice();
             text = appendDriveFilename(getMachine().getBios(), text, "bios", false);
             text = appendDriveFilename(getMachine().getKernel(), text, "kernel", false);
             text = appendDriveFilename(getMachine().getInitRd(), text, "initrd", false);
@@ -1951,9 +1951,9 @@ public class LimboActivity extends AppCompatActivity
 
         String file = null;
         if (driveFile != null) {
-            if ((driveFile.equals("") || driveFile.equals("None")) && allowEmptyDrive) {
-                file = drive + ": Empty";
-            } else if (!driveFile.equals("") && !driveFile.equals("None"))
+            if ((driveFile.equals("") && driveFile.equals("无") && driveFile.equals("None")) && allowEmptyDrive) {
+                file = drive + getString(R.string.empty);
+            } else if (!driveFile.equals("无") && !driveFile.equals("") && !driveFile.equals("None"))
                 file = drive + ": " + FileUtils.getFilenameFromPath(driveFile);
         }
         if (text == null && file != null)
@@ -1967,7 +1967,7 @@ public class LimboActivity extends AppCompatActivity
         if (clear || getMachine() == null || mMachine.getSelectedItemPosition() < 2)
             mGraphicsSectionSummary.setText("");
         else {
-            String text = "Video Card: " + getMachine().getVga();
+            String text = getString(R.string.videocard) + getMachine().getVga();
             mGraphicsSectionSummary.setText(text);
         }
     }
@@ -2226,11 +2226,11 @@ public class LimboActivity extends AppCompatActivity
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
         String[] arraySpinner = new String[5];
-        arraySpinner[0] = "32 GB (Growable)";
-        arraySpinner[1] = "64 GB (Growable)";
-        arraySpinner[2] = "128GB (Growable)";
-        arraySpinner[3] = "256GB (Growable)";
-        arraySpinner[4] = "512GB (Growable)";
+        arraySpinner[0] = activity.getString(R.string.hdd32G);
+        arraySpinner[1] = activity.getString(R.string.hdd64G);
+        arraySpinner[2] = activity.getString(R.string.hdd128G);
+        arraySpinner[3] = activity.getString(R.string.hdd256G);
+        arraySpinner[4] = activity.getString(R.string.hdd512G);
 
         ArrayAdapter<?> sizeAdapter = new ArrayAdapter<Object>(this, R.layout.custom_spinner_item, arraySpinner);
         sizeAdapter.setDropDownViewResource(R.layout.custom_spinner_dropdown_item);
@@ -2629,9 +2629,9 @@ public class LimboActivity extends AppCompatActivity
             public void run() {
                 ArrayList<String> oldHDs = MachineFilePaths.getRecentFilePaths(fileType);
                 final ArrayList<String> arraySpinner = new ArrayList<>();
-                arraySpinner.add("None");
+                arraySpinner.add(getString(R.string.none));
                 if (createOption)
-                    arraySpinner.add("New");
+                    arraySpinner.add(getString(R.string.newtext));
                 arraySpinner.add(getString(R.string.open));
                 final int index = arraySpinner.size();
                 if (oldHDs != null) {
