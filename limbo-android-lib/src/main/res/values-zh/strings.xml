@@ -355,7 +355,7 @@
     <string name="ExportFilename">要导出的文件名</string>
     <string name="ImageName">映像名</string>
     <string name="NewDirectory">新建目录</string>
-    <string name="Volume">卷</string>
+    <string name="Volume">音量</string>
     <string name="DisplayMode">显示模式</string>
     <string name="VNCPassword">VNC密码</string>
     <string name="NewVersion">新版本</string>
@@ -403,5 +403,6 @@
     <string name="video_display">显示卡：</string>
     <string name="ui">用户界面</string>
     <string name="displayMode">显示模式：</string>
+    <string name="enableAVX">启用AVX</string>
 
 </resources>

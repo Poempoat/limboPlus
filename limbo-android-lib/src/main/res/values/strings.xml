@@ -410,4 +410,5 @@
     <string name="video_display">Video Display:</string>
     <string name="ui">User Interface</string>
     <string name="displayMode">Display Mode:</string>
+    <string name="enableAVX">Enable AVX</string>
 </resources>

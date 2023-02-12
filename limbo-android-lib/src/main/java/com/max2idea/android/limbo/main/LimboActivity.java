@@ -1890,7 +1890,7 @@ public class LimboActivity extends AppCompatActivity
             if (mDisableHPET.isChecked())
                 text = appendOption("Disable HPET", text);
             if (mDisableTSC.isChecked())
-                text = appendOption("Disable TSC", text);
+                text = appendOption("Enable AVX", text);
             mCPUSectionSummary.setText(text);
         }
     }

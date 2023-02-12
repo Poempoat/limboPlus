@@ -368,10 +368,13 @@ public class KeyMapManager {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity);
         alertDialogBuilder.setTitle(R.string.SpecialKeysButtons);
         final CharSequence[] items = new CharSequence[]{"Left Ctrl", "Right Ctrl", "Left Alt", "Right Alt",
-                "Left Shift", "Right Shift", "Fn", "Mouse Btn Left", "Mouse Btn Middle", "Mouse Btn Right"};
+                "Left Shift", "Right Shift", "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "Windows", "Mouse Btn Left", "Mouse Btn Middle", "Mouse Btn Right"};
         final int[] itemsKeyCodes = new int[]{KeyEvent.KEYCODE_CTRL_LEFT, KeyEvent.KEYCODE_CTRL_RIGHT,
                 KeyEvent.KEYCODE_ALT_LEFT, KeyEvent.KEYCODE_ALT_RIGHT, KeyEvent.KEYCODE_SHIFT_LEFT,
-                KeyEvent.KEYCODE_SHIFT_RIGHT, KeyEvent.KEYCODE_FUNCTION, Config.SDL_MOUSE_LEFT,
+                KeyEvent.KEYCODE_SHIFT_RIGHT, KeyEvent.KEYCODE_F1, KeyEvent.KEYCODE_F2,
+                KeyEvent.KEYCODE_F3, KeyEvent.KEYCODE_F4, KeyEvent.KEYCODE_F5, KeyEvent.KEYCODE_F6,
+                KeyEvent.KEYCODE_F7, KeyEvent.KEYCODE_F8, KeyEvent.KEYCODE_F9, KeyEvent.KEYCODE_F10,
+                KeyEvent.KEYCODE_F11, KeyEvent.KEYCODE_F12, KeyEvent.KEYCODE_WINDOW,Config.SDL_MOUSE_LEFT,
                 Config.SDL_MOUSE_MIDDLE, Config.SDL_MOUSE_RIGHT
         };
         final boolean[] itemsEnabled = new boolean[items.length];
@@ -398,7 +401,7 @@ public class KeyMapManager {
                         if (keySurfaceView != null && keySurfaceView.pointers.size() > 0) {
                             // XXX: we should only have only button pressed under edit mode
                             for (KeyMapper.KeyMapping keyMapping : keySurfaceView.pointers.values()) {
-                                if (k < 7)
+                                if (k < 20)
                                     keyMapping.addKeyCode(itemsKeyCodes[k], null);
                                 else
                                     keyMapping.addMouseButton(itemsKeyCodes[k]);
