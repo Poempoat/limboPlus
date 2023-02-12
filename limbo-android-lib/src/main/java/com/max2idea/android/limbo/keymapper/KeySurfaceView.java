@@ -742,29 +742,29 @@ public class KeySurfaceView extends SurfaceView implements SurfaceHolder.Callbac
         else if (keycode == KeyEvent.KEYCODE_WINDOW)
             text = "Win";
         else if (keycode == KeyEvent.KEYCODE_F1)
-            text = "F1";
+            text = "f1";
         else if (keycode == KeyEvent.KEYCODE_F2)
-            text = "F2";
+            text = "f2";
         else if (keycode == KeyEvent.KEYCODE_F3)
-            text = "F3";
+            text = "f3";
         else if (keycode == KeyEvent.KEYCODE_F4)
-            text = "F4";
+            text = "f4";
         else if (keycode == KeyEvent.KEYCODE_F5)
-            text = "F5";
+            text = "f5";
         else if (keycode == KeyEvent.KEYCODE_F6)
-            text = "F6";
+            text = "f6";
         else if (keycode == KeyEvent.KEYCODE_F7)
-            text = "F7";
+            text = "f7";
         else if (keycode == KeyEvent.KEYCODE_F8)
-            text = "F8";
+            text = "f8";
         else if (keycode == KeyEvent.KEYCODE_F9)
-            text = "F9";
+            text = "f9";
         else if (keycode == KeyEvent.KEYCODE_F10)
-            text = "F10";
+            text = "f10";
         else if (keycode == KeyEvent.KEYCODE_F11)
-            text = "F11";
+            text = "f11";
         else if (keycode == KeyEvent.KEYCODE_F12)
-            text = "F12";
+            text = "f12";
         else
             return ((char) unicodeChar) + "";
         return text;
