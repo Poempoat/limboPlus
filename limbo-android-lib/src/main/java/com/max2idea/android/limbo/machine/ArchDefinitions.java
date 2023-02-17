@@ -48,23 +48,23 @@ public class ArchDefinitions {
         switch (LimboApplication.arch) {
             case x86:
             case x86_64:
-                networkCards.add("Default");
+                networkCards.add(context.getString(R.string.defaulttext));
                 networkCards.addAll(commonNetworkCards);
                 break;
             case arm:
             case arm64:
-                networkCards.add("Default");
+                networkCards.add(context.getString(R.string.defaulttext));
                 networkCards.addAll(commonNetworkCards);
                 networkCards.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.arm_nic_cards)));
                 break;
             case ppc:
             case ppc64:
-                networkCards.add("Default");
+                networkCards.add(context.getString(R.string.defaulttext));
                 networkCards.addAll(commonNetworkCards);
                 break;
             case sparc:
             case sparc64:
-                networkCards.add("Default");
+                networkCards.add(context.getString(R.string.defaulttext));
                 networkCards.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.sparc_nic_cards)));
                 break;
         }
@@ -83,7 +83,7 @@ public class ArchDefinitions {
             vgaValues.add("cirrus");
             vgaValues.add("vmware");
             vgaValues.add("virtio");
-            vgaValues.add("qxl");
+            vgaValues.add("ramfb");
         }
 
         //override vga for sun4m (32bit) machines to cg3
@@ -127,8 +127,8 @@ public class ArchDefinitions {
 
     public static ArrayList<String> getMachineValues(Context context) {
         ArrayList<String> machinesList = new ArrayList<>();
-        machinesList.add("None");
-        machinesList.add("New");
+        machinesList.add(context.getString(R.string.none));
+        machinesList.add(context.getString(R.string.newtext));
         return machinesList;
     }
 
@@ -137,22 +137,22 @@ public class ArchDefinitions {
         switch (LimboApplication.arch) {
             case x86:
             case x86_64:
-                arrList.add("Default");
+                arrList.add(context.getString(R.string.defaulttext));
                 arrList.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.x86_cpu)));
                 break;
             case arm:
             case arm64:
-                arrList.add("Default");
+                arrList.add(context.getString(R.string.defaulttext));
                 arrList.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.arm_cpu)));
                 break;
             case ppc:
             case ppc64:
-                arrList.add("Default");
+                arrList.add(context.getString(R.string.defaulttext));
                 arrList.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.ppc_cpu)));
                 break;
             case sparc:
             case sparc64:
-                arrList.add("Default");
+                arrList.add(context.getString(R.string.defaulttext));
                 arrList.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.arm_cpu)));
                 break;
         }
@@ -168,7 +168,7 @@ public class ArchDefinitions {
         switch (LimboApplication.arch) {
             case x86:
             case x86_64:
-                arrList.add("Default");
+                arrList.add(context.getString(R.string.defaulttext));
                 arrList.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.x86_machine_types)));
                 break;
             case arm:
@@ -177,12 +177,12 @@ public class ArchDefinitions {
                 break;
             case ppc:
             case ppc64:
-                arrList.add("Default");
+                arrList.add(context.getString(R.string.defaulttext));
                 arrList.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.ppc_machine_types)));
                 break;
             case sparc:
             case sparc64:
-                arrList.add("Default");
+                arrList.add(context.getString(R.string.defaulttext));
                 arrList.addAll(Arrays.asList(Installer.getAttrs(context, R.raw.sparc_machine_types)));
                 break;
         }

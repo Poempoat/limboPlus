@@ -94,7 +94,7 @@
     <string name="username_caption">Username</string>
     <string name="username_hint">For Windows Authentication</string>
     <string name="right_click">Mouse Right Click</string>
-    <string name="help">Help</string>
+    <string name="help">About</string>
     <string name="drives">Drives</string>
     <string name="volume">Volume</string>
     <string name="Default" translatable="false">default</string>
@@ -223,7 +223,7 @@
     <string name="ExportMachines">Export Machines</string>
     <string name="ViewLog">View Log</string>
     <string name="Changelog">Changelog</string>
-    <string name="License">License</string>
+    <string name="License">Do U Know?</string>
     <string name="Exit">Exit</string>
     <string name="TapDeviceFound">TAP Device found</string>
     <string name="tunDeviceWarning">Warning! Make sure device /dev/net/tun has appropriate permissions\nUser ID</string>
@@ -324,7 +324,7 @@
     <string name="OkIUnderstand">OK, I understand</string>
     <string name="SendText">Send Text</string>
     <string name="Send">Send</string>
-    <string name="GoToWiki">Online Wiki</string>
+    <string name="GoToWiki">Github</string>
     <string name="DoNotShowAgain">Do not Show Again</string>
     <string name="GenNewVersion">Get New Version</string>
     <string name="Cancel">Cancel</string>
@@ -410,4 +410,12 @@
     <string name="video_display">Video Display:</string>
     <string name="ui">User Interface</string>
     <string name="displayMode">Display Mode:</string>
+    <string name="none">None</string>
+    <string name="newtext">New</string>
+    <string name="growable">(Growable)</string>
+    <string name="defaulttext">Default</string>
+    <string name="empty">Empty</string>
+    <string name="biosInstalled">BIOS and Keymap files installed</string>
+    <string name="harddisk">Hard Disk</string>
+    <string name="floppy">Floppy</string>
 </resources>

@@ -10,8 +10,8 @@
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 20000,
-      "versionName": "2.0.0-x86",
+      "versionCode": 20003,
+      "versionName": "2.0.3-x86-debug",
       "outputFile": "limbo-android-x86-debug.apk"
     }
   ]

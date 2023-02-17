@@ -86,7 +86,7 @@
     <string name="display_refresh_rate">屏幕刷新率</string>
     <string name="ui_mode">用户界面模式</string>
     <string name="display">显示</string>
-    <string name="absolutePointerInstructions">确保虚拟机操作系统支持触摸屏设备！\\n\\n \\          在启动机器之前，从 Limbo Plus中选择鼠标= \\\"usb-tablet\\\"。</string>
+    <string name="absolutePointerInstructions">确保虚拟机操作系统支持触摸屏设备！\n\\n           在启动机器之前，从 Limbo Plus中选择鼠标= \"usb-tablet\"。</string>
     <string name="externalMouseInstructions">将 USB/蓝牙鼠标插入您的 Android 设备。</string>
     <string name="reconnect">重新连接</string>
     <string name="calibrate_mouse">校准（修复）鼠标</string>
@@ -105,7 +105,7 @@
     <string name="fixesMouseParen">（经过修复的鼠标）</string>
     <string name="machinesImported">机器已导入</string>
     <string name="reassignDiskFilesInstructions">如果这是新安装，您将需要通过文件管理器重新打开所有磁盘文件</string>
-    <string name="importInstructions">选择要导入的 csv 文件。\\n“警告：任何具有相同名称的机器都将被替换</string>
+    <string name="importInstructions">选择要导入的 csv 文件。\n“警告：任何具有相同名称的机器都将被替换</string>
     <string name="vmNotRunning">虚拟机未运行</string>
     <string name="Running">运行中</string>
     <string name="Suspended">已挂起</string>
@@ -121,7 +121,7 @@
     <string name="externalQMPServerOn">外部QMP服务器：开</string>
     <string name="desktopMode">桌面模式</string>
     <string name="highPriorityWarning">警告！高优先级可能会提高虚拟机速度，但会降低手机速度！</string>
-    <string name="sharedFolderWarning">警告！ 在 Limbo Plus下启用共享文件夹存在错误。\\n如果您使用存储清理应用程序，请排除此文件夹。 \\n请确保您保留了文件的备份。 此功能不支持暂停虚拟机。 \\n如果您遇到崩溃，请禁用此选项。 \\n你想继续吗？</string>
+    <string name="sharedFolderWarning">警告！在基于Limbo6.0.1的Limbo Plus中启用共享文件夹尚未经过测试，这可能会出现很多bug！ \n 此功能不支持暂停虚拟机。 \n如果您遇到崩溃，请禁用此选项。 \n你想继续吗？</string>
     <string name="advancedTools">高级工具</string>
     <string name="linksInstructions">获取完整的 Qwerty 键盘、ISO 和虚拟磁盘映像的下载管理器、用于网络连接的 SSH/FTP 客户端</string>
     <string name="discardVMState">丢弃虚拟机状态</string>
@@ -129,23 +129,23 @@
     <string name="tapUserId">TAP用户ID</string>
     <string name="tapNotSupportInstructions">“您的设备不支持 TAP，请改用‘User’网络模式”</string>
     <string name="network">网络</string>
-    <string name="externalNetworkWarning">警告！ 不建议为您不信任或包含旧操作系统的图像启用外部网络，如果在运行虚拟机之前不使用网络“None”。</string>
+    <string name="externalNetworkWarning">警告！ 不建议为您不信任或包含旧操作系统的图像启用外部网络，如果在运行虚拟机之前不使用网络“无”。</string>
     <string name="faq">问答</string>
     <string name="open">打开</string>
     <string name="enableMTTCG">启用MTTCG</string>
-    <string name="enableMTTCGWarning">警告！ 在 Limbo Plus下启用 MTTCG 尚未经过全面测试。 \\n您需要拥有多核 CPU 的 Android 设备。 如果您不知道这是什么，请按取消。\\n\\n如果您遇到应用程序崩溃或冻结，请禁用此选项。 你想继续吗？</string>
+    <string name="enableMTTCGWarning">警告！ 在 Limbo Plus下启用 MTTCG 尚未经过全面测试。 \n您需要拥有多核 CPU 的 Android 设备。 如果您不知道这是什么，请按取消。\n \n如果您遇到应用程序崩溃或冻结，请禁用此选项。 你想继续吗？</string>
     <string name="mttcgHelp">MTTCG帮助</string>
     <string name="failToCreateMachineDirError">无法创建内部机器目录</string>
-    <string name="externalVNCWarning">VNC 连接未加密，因此不安全。 确保你在受信任的网络上！\\n</string>
+    <string name="externalVNCWarning">VNC 连接未加密，因此不安全。 确保你在受信任的网络上！\n</string>
     <string name="Password">密码</string>
     <string name="passwordCannotBeEmpty">密码不能为空！</string>
-    <string name="qmpExternalWarning">警告：不推荐允许 QMP 为外部连接提供服务！ QMP 连接是无密码和未加密的，因此不安全。 请确保您使用的是专用网络，和您信任设备中安装的其他应用！\\n</string>
+    <string name="qmpExternalWarning">警告：不推荐允许 QMP 为外部连接提供服务！ QMP 连接是无密码和未加密的，因此不安全。 请确保您使用的是专用网络，和您信任设备中安装的其他应用！\n</string>
     <string name="Continue">继续</string>
     <string name="chooseDirToCreateImage">选择一个目录以创建映像</string>
     <string name="ImageCreated">已创建映像</string>
     <string name="vncServer">VNC服务器</string>
     <string name="started">已开始</string>
-    <string name="vncUnecryptedWarning">警告：VNC 连接未加密且不安全确保您在专用网络上！\\n</string>
+    <string name="vncUnecryptedWarning">警告：VNC 连接未加密且不安全确保您在专用网络上！\n</string>
     <string name="qmpServer">QMP服务器</string>
     <string name="Enable">启用</string>
     <string name="ImportMachines">导入机器</string>
@@ -153,7 +153,7 @@
     <string name="deleteVMWarning">你要删除虚拟机吗？ 只会删除机器配置文件和状态，不会删除磁盘映像文件</string>
     <string name="NoMachineSelected">没有机器已选中</string>
     <string name="multipleVCPU">多个虚拟CPU</string>
-    <string name="multipleVCPUWarning">警告！除非您使用 KVM 或 MTTCG，否则设置多个虚拟 CPU 不会带来额外的性能。您的设备甚至可能会变慢或虚拟机操作系统可能会挂起，因此建议使用 1 个 CPU。\\n\\n</string>
+    <string name="multipleVCPUWarning">警告！除非您使用 KVM 或 MTTCG，否则设置多个虚拟 CPU 不会带来额外的性能。您的设备甚至可能会变慢或虚拟机操作系统可能会挂起，因此建议使用 1 个 CPU。\n \n</string>
     <string name="disableTSCInstructions">如果您的来宾操作系统无法启动，请检查选项“禁用TSC”并重新启动虚拟机。</string>
     <string name="DoYouWantToContinue">你要继续吗？</string>
     <string name="vCPUHelp">虚拟CPU帮助</string>
@@ -191,10 +191,10 @@
     <string name="ExportMachines">导出机器</string>
     <string name="ViewLog">查看日志</string>
     <string name="Changelog">更新日志</string>
-    <string name="License">许可证</string>
+    <string name="License">你知道吗？</string>
     <string name="Exit">退出</string>
     <string name="TapDeviceFound">TAP设备已找到</string>
-    <string name="tunDeviceWarning">警告！ 确保设备 /dev/net/tun 具有适当的权限\\n用户 ID</string>
+    <string name="tunDeviceWarning">警告！ 确保设备 /dev/net/tun 具有适当的权限\n用户 ID</string>
     <string name="TAPHelp">TAP帮助</string>
     <string name="VNCStarted">VNC已开始</string>
     <string name="LogWarning">在上次运行中发生了一些错误。你想要查看日志吗？</string>
@@ -226,10 +226,10 @@
     <string name="Create">创建</string>
     <string name="MachineNameCannotBeEmpty">机器名称不能为空</string>
     <string name="ShutdownVM">关闭虚拟机</string>
-    <string name="ShutdownVMWarning">为避免任何损坏的数据，请确保您已从虚拟机中关闭操作系统。继续？</string>
+    <string name="ShutdownVMWarning">为避免损坏任何数据，请确保您已从虚拟机中关闭操作系统。继续？</string>
     <string name="VMSuspended">虚拟机已挂起</string>
     <string name="ResetVM">重启虚拟机</string>
-    <string name="ResetVMWarning">为避免任何损坏的数据，请确保您已从 VM 中关闭操作系统。继续？</string>
+    <string name="ResetVMWarning">为避免损坏任何数据，请确保您已从虚拟机中关闭操作系统。继续？</string>
     <string name="VMIsReset">虚拟机被重启</string>
     <string name="VMRunning">虚拟机运行中</string>
     <string name="Paused">已暂停</string>
@@ -259,7 +259,7 @@
     <string name="OkIUnderstand">是，我明白了</string>
     <string name="SendText">发送文本</string>
     <string name="Send">发送</string>
-    <string name="GoToWiki">在线Wiki</string>
+    <string name="GoToWiki">GitHub</string>
     <string name="DoNotShowAgain">不再显示</string>
     <string name="GenNewVersion">获取新版本</string>
     <string name="Cancel">取消</string>
@@ -307,7 +307,7 @@
     <string name="username_caption">用户名</string>
     <string name="username_hint">用于 Windows 身份验证</string>
     <string name="right_click">鼠标右键单击</string>
-    <string name="help">帮助</string>
+    <string name="help">关于</string>
     <string name="drives">驱动器</string>
     <string name="volume">音量</string>
     <string name="advanced">高级</string>
@@ -353,9 +353,9 @@
     <string name="KeyMapperName">按键映射器名称</string>
     <string name="DownloadsOSes">下载OSes</string>
     <string name="ExportFilename">要导出的文件名</string>
-    <string name="ImageName">映像名</string>
+    <string name="ImageName">要新建的映像名称</string>
     <string name="NewDirectory">新建目录</string>
-    <string name="Volume">卷</string>
+    <string name="Volume">音量</string>
     <string name="DisplayMode">显示模式</string>
     <string name="VNCPassword">VNC密码</string>
     <string name="NewVersion">新版本</string>
@@ -403,5 +403,13 @@
     <string name="video_display">显示卡：</string>
     <string name="ui">用户界面</string>
     <string name="displayMode">显示模式：</string>
+    <string name="none">无</string>
+    <string name="newtext">新建</string>
+    <string name="growable">（动态扩展）</string>
+    <string name="defaulttext">默认</string>
+    <string name="empty">空</string>
+    <string name="biosInstalled">已安装BIOS和键盘映射文件</string>
+    <string name="harddisk">硬盘</string>
+    <string name="floppy">软盘</string>
 
 </resources>

@@ -318,7 +318,7 @@ private String getQemuLibrary() {
             paramsList.add("-smp");
             paramsList.add(getMachine().getCpuNum() + ",cores=" + getMachine().getCpuNum() + "");
         }
-        if (getMachineType() != null && !getMachineType().equals("Default")) {
+        if (getMachineType() != null && (!getMachineType().equals("Default") && !getMachineType().equals("默认"))) {
             paramsList.add("-M");
             paramsList.add(getMachineType());
         }
@@ -332,7 +332,7 @@ private String getQemuLibrary() {
         //XXX: we disable tsc feature for x86 since some guests are kernel panicking
         // if the cpu has not specified by user we use the internal qemu32/64
         if (getMachine().getDisableTSC() == 1 && (LimboApplication.arch == Config.Arch.x86 || LimboApplication.arch == Config.Arch.x86_64)) {
-            if (cpu == null || cpu.equals("Default")) {
+            if (cpu == null || (cpu.equals("Default") && cpu.equals("默认"))) {
                 if (LimboApplication.arch == Config.Arch.x86)
                     cpu = "qemu32";
                 else if (LimboApplication.arch == Config.Arch.x86_64)
@@ -383,10 +383,10 @@ private String getQemuLibrary() {
                 && machineType == null) {
             machineType = "pc";
         } else if ((LimboApplication.arch == Config.Arch.ppc || LimboApplication.arch == Config.Arch.ppc64)
-                && machineType.equals("Default")) {
+                && machineType.equals("Default") && machineType.equals("默认")) {
             machineType = null;
         } else if ((LimboApplication.arch == Config.Arch.sparc || LimboApplication.arch == Config.Arch.sparc64)
-                && machineType.equals("Default")) {
+                && machineType.equals("Default") && machineType.equals("默认")) {
             machineType = null;
         }
         return machineType;
@@ -447,7 +447,7 @@ private String getQemuLibrary() {
     }
 
     private String getNicCard() {
-        if (getMachine().getNetwork() == null || getMachine().getNetwork().equals("None")) {
+        if (getMachine().getNetwork() == null || (getMachine().getNetwork().equals("None") && getMachine().getNetwork().equals("无"))) {
             return null;
         } else if (getMachine().getNetwork().equals("User")) {
             return getMachine().getNetworkCard();
@@ -458,7 +458,7 @@ private String getQemuLibrary() {
     }
 
     private String getNetCfg() {
-        if (getMachine().getNetwork() == null || getMachine().getNetwork().equals("None")) {
+        if (getMachine().getNetwork() == null || (getMachine().getNetwork().equals("None") && getMachine().getNetwork().equals("无"))) {
             return "none";
         } else if (getMachine().getNetwork().equals("User")) {
             return "user";
@@ -470,13 +470,16 @@ private String getQemuLibrary() {
 
     private void addGraphicsOptions(ArrayList<String> paramsList) {
         if (getMachine().getVga() != null) {
-            if (getMachine().getVga().equals("Default")) {
+            if (getMachine().getVga().equals("Default") && getMachine().getVga().equals("默认")) {
                 //do nothing
             } else if (getMachine().getVga().equals("virtio-gpu-pci")) {
                 paramsList.add("-device");
                 paramsList.add(getMachine().getVga());
             } else if (getMachine().getVga().equals("nographic")) {
                 paramsList.add("-nographic");
+            } else if (getMachine().getVga().equals("ramfb")) {
+                paramsList.add("-device");
+                paramsList.add("ramfb");
             } else {
                 paramsList.add("-vga");
                 paramsList.add(getMachine().getVga());

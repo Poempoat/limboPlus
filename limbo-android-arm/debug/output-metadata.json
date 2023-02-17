@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.limbo.emu.main.arm",
+  "applicationId": "com.limbo.emu.plus.arm",
   "variantName": "processDebugResources",
   "elements": [
     {
