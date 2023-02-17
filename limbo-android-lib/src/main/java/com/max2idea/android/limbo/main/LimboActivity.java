@@ -1877,20 +1877,20 @@ public class LimboActivity extends AppCompatActivity
         if (clear || getMachine() == null || mMachine.getSelectedItemPosition() < 2)
             mCPUSectionSummary.setText("");
         else {
-            String text = "Machine Type: " + getMachine().getMachineType()
+            String text = getString(R.string.MachineType) + getMachine().getMachineType()
                     + ", CPU: " + getMachine().getCpu()
                     + ", " + getMachine().getCpuNum() + " CPU" + ((getMachine().getCpuNum() > 1) ? "s" : "")
                     + ", " + getMachine().getMemory() + " MB";
             if (mEnableMTTCG.isChecked())
-                text = appendOption("Enable MTTCG", text);
+                text = appendOption(getString(R.string.enableMTTCG), text);
             if (mEnableKVM.isChecked())
-                text = appendOption("Enable KVM", text);
+                text = appendOption(getString(R.string.EnableKVM), text);
             if (mDisableACPI.isChecked())
-                text = appendOption("Disable ACPI", text);
+                text = appendOption(getString(R.string.disableACPI), text);
             if (mDisableHPET.isChecked())
-                text = appendOption("Disable HPET", text);
+                text = appendOption(getString(R.string.disableHPET), text);
             if (mDisableTSC.isChecked())
-                text = appendOption("Disable TSC", text);
+                text = appendOption(getString(R.string.disableTSC), text);
             mCPUSectionSummary.setText(text);
         }
     }
@@ -1938,7 +1938,7 @@ public class LimboActivity extends AppCompatActivity
         if (clear || getMachine() == null || mMachine.getSelectedItemPosition() < 2)
             mBootSectionSummary.setText("");
         else {
-            String text = "Boot from: " + getMachine().getBootDevice();
+            String text = getString(R.string.boot_From) + getMachine().getBootDevice();
             text = appendDriveFilename(getMachine().getBios(), text, "bios", false);
             text = appendDriveFilename(getMachine().getKernel(), text, "kernel", false);
             text = appendDriveFilename(getMachine().getInitRd(), text, "initrd", false);
@@ -1967,7 +1967,7 @@ public class LimboActivity extends AppCompatActivity
         if (clear || getMachine() == null || mMachine.getSelectedItemPosition() < 2)
             mGraphicsSectionSummary.setText("");
         else {
-            String text = "Video Card: " + getMachine().getVga();
+            String text = getString(R.string.video_card) + getMachine().getVga();
             mGraphicsSectionSummary.setText(text);
         }
     }
@@ -2908,11 +2908,11 @@ public class LimboActivity extends AppCompatActivity
     }
 
     private void addGenericOperatingSystems() {
-        Config.osImages.put(getString(R.string.other), new LinksManager.LinkInfo("Other",
+        Config.osImages.put(getString(R.string.other), new LinksManager.LinkInfo(getString(R.string.other),
                 getString(R.string.otherOperatingSystem),
                 Config.otherOSLink,
                 LinksManager.LinkType.OTHER));
-                Config.osImages.put(getString(R.string.custom), new LinksManager.LinkInfo("Custom",
+                Config.osImages.put(getString(R.string.custom), new LinksManager.LinkInfo(getString(R.string.custom),
                 getString(R.string.customOperatingSystem),
                 null,
                 LinksManager.LinkType.OTHER));

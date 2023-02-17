@@ -344,7 +344,7 @@ public class LimboFileManager extends ListActivity {
 
 
         items = new ArrayList<>();
-        items.add(new File(".. (Parent Directory)"));
+        items.add(new File(getString(R.string.parentdir)));
 
         if (files != null) {
             for (File file1 : files) {

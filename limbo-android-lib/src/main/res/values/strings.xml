@@ -388,7 +388,7 @@
     <string name="ImportBIOSFile">Import BIOS</string>
     <string name="importBIOSInstructions">Select a BIOS file (bin, rom, etc..) to import.</string>
     <string name="save_snapshot">Save Snapshot</string>
-    <string name="disableTSC">Disable TSC</string>
+    <string name="disableTSC">Enable AVX</string>
     <string name="disableHPET">Disable HPET</string>
     <string name="disks">Disks</string>
     <string name="hda">Hard Disk A:</string>
@@ -418,4 +418,8 @@
     <string name="biosInstalled">BIOS and Keymap files installed</string>
     <string name="harddisk">Hard Disk</string>
     <string name="floppy">Floppy</string>
+    <string name="parentdir">.. (Parent Directory)</string>
+    <string name="boot_From">"Boot From: "</string>
+    <string name="video_card">Video Card:</string>
+    <string name="usbctrl">USB Controller:</string>
 </resources>

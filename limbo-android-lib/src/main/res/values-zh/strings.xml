@@ -382,7 +382,7 @@
     <string name="cpucores">CPU核心数：</string>
     <string name="RAM">RAM内存（MB）</string>
     <string name="disableACPI">禁用ACPI</string>
-    <string name="disableTSC">禁用TSC</string>
+    <string name="disableTSC">启用AVX</string>
     <string name="disableHPET">禁用HPET</string>
     <string name="disks">磁盘</string>
     <string name="hda">硬盘A：</string>
@@ -411,5 +411,9 @@
     <string name="biosInstalled">已安装BIOS和键盘映射文件</string>
     <string name="harddisk">硬盘</string>
     <string name="floppy">软盘</string>
+    <string name="parentdir">..（上一级目录）</string>
+    <string name="boot_From">优先启动：</string>
+    <string name="video_card">显示卡：</string>
+    <string name="usbctrl">USB控制器</string>
 
 </resources>

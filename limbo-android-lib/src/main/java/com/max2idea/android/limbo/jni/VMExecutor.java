@@ -338,7 +338,7 @@ private String getQemuLibrary() {
                 else if (LimboApplication.arch == Config.Arch.x86_64)
                     cpu = "qemu64";
             }
-            cpu += ",-tsc";
+            cpu += ",+avx,+avx2,+avx512f,+avx512cd,+avx512dq,+avx512bw,+avx512vl,+avx512vnni";
         }
 
         if (getMachine().getDisableAcpi() != 0) {
@@ -369,9 +369,9 @@ private String getQemuLibrary() {
             paramsList.add("-accel");
             String tcgParams = "tcg";
             if (getMachine().getEnableMTTCG() != 0) {
-                tcgParams += ",thread=multi";
+                tcgParams += ",thread=multi,tb-size=" + getMachine().getMemory();
             } else {
-                tcgParams += ",thread=single";
+                tcgParams += ",thread=single,tb-size=" + getMachine().getMemory();
             }
             paramsList.add(tcgParams);
         }
