@@ -1,5 +1,5 @@
 # Limbo Plus (QEMU) 安卓端
-# 这个仓库已被弃用。请前往：# https://github.com/Poempoat/LimboEmulatorPlus
+# 这个仓库已被弃用。请前往： https://github.com/Poempoat/LimboEmulatorPlus
  请访问我的主页:
  https://space.bilibili.com/625710211
 [English](README.md) | 中文
